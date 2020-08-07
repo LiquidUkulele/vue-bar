@@ -131,7 +131,14 @@ function genBars (_this, arr, h) {
         height: item.height,
         rx: _this.rounding,
         ry: _this.rounding
-      }
+      },
+      directives: [
+        {
+          name: 'tooltip',
+          value: '' + item.title,
+          arg: 'top'
+        }
+      ]
     }, [
       h('animate', {
         attrs: {
@@ -141,8 +148,7 @@ function genBars (_this, arr, h) {
           dur: ((_this.growDuration) + "s"),
           fill: 'freeze'
         }
-      }),
-      h('title', {}, [item.title])
+      })
     ])
   });
   return rects
