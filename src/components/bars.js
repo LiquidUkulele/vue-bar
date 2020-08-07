@@ -58,6 +58,10 @@ export default {
     padding: {
       type: Number,
       default: 8
+    },
+    tooltipFormat: {
+      type: Function,
+      default: () => null
     }
   },
 

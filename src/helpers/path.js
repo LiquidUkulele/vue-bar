@@ -74,7 +74,7 @@ export function genBars (_this, arr, h) {
       directives: [
         {
           name: 'tooltip',
-          value: '' + item.title,
+          value: _this.tooltipFormat ? _this.tooltipFormat(item) : ('' + item.title),
           arg: 'top'
         }
       ]

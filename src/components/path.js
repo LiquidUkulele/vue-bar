@@ -1,7 +1,7 @@
 import { genPoints, genBars, genLabels } from '../helpers/path'
 
 export default {
-  props: ['data', 'boundary', 'barWidth', 'rounding', 'id', 'gradient', 'growDuration', 'max', 'min', 'labelData', 'labelProps'],
+  props: ['data', 'boundary', 'barWidth', 'rounding', 'id', 'gradient', 'growDuration', 'max', 'min', 'labelData', 'labelProps', 'tooltipFormat'],
 
   render (h) {
     const { data, boundary, max, min, labelData } = this
