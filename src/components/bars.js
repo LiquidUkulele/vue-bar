@@ -61,7 +61,7 @@ export default {
     },
     tooltipFormat: {
       type: Function,
-      default: () => null
+      default: () => v => v
     }
   },
 
